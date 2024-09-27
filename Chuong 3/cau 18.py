@@ -1,11 +1,57 @@
-#ve hinh vuong rong bang dau * voi chieu dai n
-n = int(input("Nhập chiều dài cạnh hình vuông: "))
+"""
+Cau 18: Ve cac 
+* * * *    
+*     *
+*     *
+* * * *
+
+      *
+    * *
+  * * *
+* * * *
+
+*
+* *
+*   *
+* * * * * * *
+        *   *
+          * *
+            *
+
+"""
+n = int(input("Nhap n:"))
+
+print("Hinh 1")
 for i in range(n):
-    if i == 0 or i == n-1:
-        print("* " * n)
-    else:
-        print("* " + "  " * (n-2) + "*")
-#ve tam giac vuong bang dau * voi chieu dai 2 canh goc vuong la m
-m = int(input("Nhập chiều dài 2 cạnh góc vuông của tam giác vuông: "))
-for i in range(1, m+1):
-    print("* " * i)
+    for j in range(n):
+        if (i==0 or i==n-1 or j==0 or j==n-1):
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print("\nHinh 2")
+for i in range(n):
+    for j in range(n):
+        if j >= (n-1)-i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print("\nHinh3")
+center = n//2
+for i in range(n):
+    for j in range(n):
+        if i <= center:
+            if(j==0 or i==j or i==center):
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        else:
+            if(i==j or j==(n-1)):
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+    print()
+    

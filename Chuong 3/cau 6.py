@@ -9,7 +9,7 @@ chu_donvi = ["một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "ch
 if chuc == 0:
     print(chu_donvi[donvi - 1])
 else:
-    if donvi == 1 or donvi == 5:
+    if (donvi == 1 or donvi == 5) and chuc !=1:
         print(chu_chuc[chuc - 1], chu_ngu[donvi - 1])
     else:
         print(chu_chuc[chuc - 1], chu_donvi[donvi - 1])

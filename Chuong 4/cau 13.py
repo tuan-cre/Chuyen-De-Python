@@ -1,18 +1,15 @@
-#Câu 13: Hàm kiểm tra số hoàn thiện, số thịnh vượng
+def sum_of_divisors(n):
+    total = 0
+    for i in range(1, n):
+        if n % i == 0:
+            total += i
+    return total
 
 def is_perfect_number(n):
-    sum = 0
-    for i in range(1, n):
-        if n % i == 0:
-            sum += i
-    return sum == n
+    return sum_of_divisors(n) == n
 
 def is_abundant_number(n):
-    sum = 0
-    for i in range(1, n):
-        if n % i == 0:
-            sum += i
-    return sum > n
+    return sum_of_divisors(n) > n
 
 n = int(input("Nhap n: "))
 if is_perfect_number(n):

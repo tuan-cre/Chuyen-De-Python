@@ -1,3 +1,4 @@
+'''
 Câu 4: Python hỗ trợ những kiểu dữ liệu cơ bản nào ?
 Các kiểu dữ liệu trong Python
 -Kiểu dữ liệu số, Python hỗ trợ 4 kiểu dữ liệu số:
@@ -105,3 +106,4 @@ Câu 10: Hãy viết ngắn gọn lại các lệnh dưới đây
 (f) x = 2*x			 x *= 2
 (g) number_of_closed_cases = number_of_closed_cases + 2*ncc
  number_of_closed_cases += 2*ncc
+'''

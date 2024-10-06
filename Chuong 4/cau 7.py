@@ -1,4 +1,3 @@
-#Câu 7: Tính và xuất độ dài đoạn AB
 import math
 print('Nhap A:')
 xa = float(input('xa='))

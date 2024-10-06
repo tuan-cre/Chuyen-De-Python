@@ -10,8 +10,8 @@ for chapter_folder in os.listdir(main_directory):
     
     # Check if it's a folder that starts with 'Chuong'
     if os.path.isdir(chapter_path) and chapter_folder.startswith("Chuong"):
-        # Extract the chapter number and format it with leading zero
-        chapter_number = chapter_folder.split("Chuong")[1].zfill(2)  # Add leading zero if needed
+        # Extract the chapter number, format it with leading zero, and keep the space
+        chapter_number = chapter_folder.split(" ")[1].zfill(2)  # Extract and format the number with leading zero
         chapter = f"Chuong{chapter_number}"  # No space between 'Chuong' and the number
         
         # Loop through each file in the chapter folder

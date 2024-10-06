@@ -1,9 +1,12 @@
 
 link = r"d:\\music\muabui.mp3"
 
-tenbaihat = link.split("\\")[-1].split(".")[0]
-tenbaihat2 = link.split("\\")[-1]#.split(".")[0]
-tenbaihat3 = link.split("\\")[-1]#.split(".")[0]
-print(tenbaihat)
-print(tenbaihat2)
-print(tenbaihat3)
+def get_filename(link):
+    return link.split("\\")[-1]
+
+def get_filename2(link):
+    return link.split("\\")[-1].split(".")[0]
+
+
+print(get_filename(link))
+print(get_filename2(link))

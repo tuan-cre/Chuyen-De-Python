@@ -15,4 +15,5 @@ def NegativeNumberInStrings(s):
                 negativeNumber.append(int(number)*-1)
     return negativeNumber
 
-print(NegativeNumberInStrings(s))
+for i in NegativeNumberInStrings(s):
+    print(i, end = " ")

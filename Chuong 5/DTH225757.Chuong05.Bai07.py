@@ -8,7 +8,7 @@ def ToiUuChuoi(s):
         if len(word.strip())!=0:
             s2=s2+word+" "
     return s2.strip()
-s="   Dao  Duy   Thanh  "
+s="    TRần    duY            thAnH  "
 print(s,"=>",len(s))
 s=ToiUuChuoi(s).title()
 print(s,"=>",len(s))

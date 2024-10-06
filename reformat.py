@@ -17,7 +17,7 @@ for chapter_folder in os.listdir(main_directory):
         # Loop through each file in the chapter folder
         for filename in os.listdir(chapter_path):
             # Check if the file follows the pattern "Bai X.py"
-            if filename.startswith("Bai") and filename.endswith(".py"):
+            if filename.startswith("cau") and filename.endswith(".py"):
                 # Extract the Bai number from the filename
                 bai_number = filename.split(" ")[1].split(".")[0]
                 # Format the Bai number with leading zeros

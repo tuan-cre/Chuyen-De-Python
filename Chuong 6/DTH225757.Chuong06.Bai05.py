@@ -1,4 +1,5 @@
 lst = [20, 1, -34, 40, -8, 60, 1, 3]
+print(lst)
 
 print("(a)", lst)
 print("(b)", lst[0:3])

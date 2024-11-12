@@ -326,12 +326,10 @@ def delete_task_from_todoist(task_name):
         else:
             speak("An error occurred while deleting the task.")
         print(f"Failed to delete task {task_name}: {response.status_code}")
-
-
-
     
 def xuLy():
     while True:
+        print("Đang nghe...")
         text = takeCommand().lower()
         
         if "xin chào" in text:
